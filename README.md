@@ -20,9 +20,9 @@ This Simon game recreates the classic electronic memory challenge using a simple
 
 > Replace these image paths with your own screenshots if you add files to the project.
 
-![Simon Game Start Screen](./assets/simon-start.png)
+![Simon Game Start Screen](\assets\Simon-start.png)
 
-![Simon Game In Action](./assets/simon-play.png)
+![Simon Game In Action](\assets\Simon-action.png)
 
 ## ?? How to Play
 
@@ -55,9 +55,9 @@ Simon game/
 
 ## ?? File Summary
 
-- `index.html` — game interface and audio assets
-- `style.css` — layout and color styles
-- `index.js` — sequence generation, user input handling, and game flow
+- `index.html` ï¿½ game interface and audio assets
+- `style.css` ï¿½ layout and color styles
+- `index.js` ï¿½ sequence generation, user input handling, and game flow
 
 ## ?? Notes
 
