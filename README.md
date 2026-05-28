@@ -1,122 +1,81 @@
 # Simon Game
 
-A classic browser-based Simon memory game built with HTML, CSS, and JavaScript. Players must repeat an increasingly long sequence of colored lights and sounds. The game resets when the player makes a mistake.
+A browser-based Simon memory game built with HTML, CSS, and JavaScript. The game shows a sequence of colored pads, and the player must repeat the same pattern in the correct order.
 
----
+## Overview
 
-## ?? Overview
+This project recreates the classic Simon memory challenge with four colored buttons, sound feedback, a power toggle, a start button, strict mode, and a turn counter. Each round adds to the sequence, making the game harder as the player progresses.
 
-This Simon game recreates the classic electronic memory challenge using a simple and responsive UI. The computer generates a sequence of four colors, and the player must repeat the sequence by clicking the colored pads in the correct order.
+## Features
 
-## ?? Features
-
-- Four-color Simon pad with sound and animation
-- Start button and power toggle
+- Four-color Simon game board
+- Sound feedback for each color
+- Power toggle to turn the game on and off
+- Start button to begin a new round
 - Strict mode option
-- Progressive sequence generation up to 20 steps
-- Visual feedback for correct and incorrect input
+- Turn counter display
+- Visual feedback for correct moves, wrong moves, and winning
+- Browser-only setup with no build tools required
 
-## ??? Screenshots
+## Screenshots
 
-> Replace these image paths with your own screenshots if you add files to the project.
+![Simon Game Start Screen](./assets/Simon-start.png)
 
-![Simon Game Start Screen](\assets\Simon-start.png)
+![Simon Game In Action](./assets/Simon-action.png)
 
-![Simon Game In Action](\assets\Simon-action.png)
+## How To Play
 
-## ?? How to Play
+1. Turn on the **Power** toggle.
+2. Click the **Start** button.
+3. Watch the color sequence shown by the game.
+4. Repeat the sequence by clicking the colored pads in the same order.
+5. If your move is correct, the game continues to the next round.
+6. If your move is wrong, the game shows `NO!`.
+7. In strict mode, a wrong move restarts the game.
 
-1. Click the **Power** toggle to turn the game on.
-2. Press the **Start** button to begin.
-3. Watch the computer play a sequence of lights.
-4. Repeat the sequence by clicking the colored pads.
-5. If your input is correct, the game advances to the next round.
-6. If you make a mistake, the game shows **NO!** and replays the sequence.
-
-## ?? Installation
+## Installation
 
 1. Clone or download the repository.
-2. Open `index.html` in your web browser.
+2. Open the `Simon game` folder.
+3. Open `index.html` in your browser.
 
-```bash
-# Example using Windows PowerShell
-Start-Process "index.html"
-```
+No package installation is needed.
 
-## ?? Project Structure
+## Project Structure
 
-```
+```text
 Simon game/
-  +- index.html          # Main game page
-  +- style.css           # Game styling
-  +- index.js            # Game logic
-  +- README.md           # Project documentation
+|-- index.html
+|-- style.css
+|-- index.js
+|-- README.md
+`-- assets/
+    |-- Simon-start.png
+    `-- Simon-action.png
 ```
 
-## ?? File Summary
+## File Summary
 
-- `index.html` � game interface and audio assets
-- `style.css` � layout and color styles
-- `index.js` � sequence generation, user input handling, and game flow
+- `index.html` contains the game layout and audio sources.
+- `style.css` controls the Simon board design and page styling.
+- `index.js` handles sequence generation, player input, game state, strict mode, and win/loss feedback.
 
-## ?? Notes
+## Notes
 
-- The game is designed to work in modern browsers.
-- Audio playback may require user interaction before first sound is heard.
+- The game uses external audio files from FreeCodeCamp.
+- The page also loads the Original Surfer font from Google Fonts.
+- Some browsers may require the user to interact with the page before audio can play.
+- In the current JavaScript, the game declares a win after 3 correct inputs, even though it generates a 20-step sequence.
 
-## ?? Future Improvements
+## Future Improvements
 
-- Add a high score counter and persistent score storage
-- Add mobile touch support for better device compatibility
-- Add sound toggle and difficulty settings
-- Add a smoother animation sequence and transition effects
+- Make the win condition use the full 20-step sequence.
+- Add a high score counter.
+- Store high scores in local storage.
+- Improve mobile responsiveness.
+- Add a sound on/off setting.
+- Add keyboard support.
 
-## ?? Contribution Templates
+## License
 
-### Bug Report Template
-
-```md
-## Bug Report
-
-**Describe the bug**
-A clear and concise description of what the bug is.
-
-**Steps to reproduce**
-1. Go to `index.html`
-2. Turn the game on
-3. Press start
-4. Enter the wrong sequence
-
-**Expected behavior**
-What you expected to happen.
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Environment**
-- Browser: Chrome / Edge / Firefox
-- OS: Windows / macOS / Linux
-```
-
-### Feature Request Template
-
-```md
-## Feature Request
-
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
-
-**Why is this feature important?**
-Explain the benefit or use case.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
-```
-
-## ?? License
-
-Feel free to use and modify this project for learning and personal use.
-
----
-
-Happy coding! ??
+This project is free to use and modify for learning and personal practice.
